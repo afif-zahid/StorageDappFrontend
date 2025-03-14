@@ -1,0 +1,144 @@
+/* Import Futuristic Font */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+
+.fileStorageContainer {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0a0f1e 10%, #02050a 80%);
+  color: #00eaff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Wider Layout */
+.fileStorageWrapper {
+  max-width: 1400px; /* Increased width */
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(0, 255, 255, 0.2);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+/* Only illuminate on hover */
+.fileStorageWrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(0, 238, 255, 0.6);
+}
+
+/* Futuristic Title */
+.fileStorageTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px cyan;
+}
+
+/* Adjusted Input */
+.fileInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #00eaff;
+  outline: none;
+  transition: background 0.3s, transform 0.3s;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* Glow only on hover */
+.fileInput:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Cyber Button */
+.storeBtn {
+  background: linear-gradient(135deg, #00feba, #2bff88);
+  padding: 0.75rem 2rem;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Glow only on hover */
+.storeBtn:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  transform: scale(1.1);
+}
+
+/* Files Grid */
+.filesGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .filesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .filesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* File Cards */
+.fileCard {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Glow only on hover */
+.fileCard:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* File Name */
+.fileName {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #00eaff;
+  text-shadow: 0 0 5px cyan;
+}
+
+/* Header */
+.headerContainer {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 255, 255, 0.2);
+}
+
+/* Header Text */
+.headerTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px cyan;
+}
